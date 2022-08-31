@@ -1,0 +1,213 @@
+body {
+  /*style todo el body*/
+  background-image: url("images/fondo.jpg");
+}
+
+@font-face {
+  /*style para selecciona una font especifica*/
+  font-family: "miami";
+  src: url("images/Miami.ttf");
+}
+
+/*--------ARRANCA LA TOPNAV-------*/
+
+.topnav {
+  /*style para la barra de navegacion superior*/
+  background-color: #f24f13;
+  overflow: hidden;
+}
+.topnav a {
+  /*style para los a(hipervinculos) dentro de topnav*/
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "miami";
+  border-left: 2px solid #d90d1e;
+}
+
+.topnav a:hover {
+  /*style para hover a(hipervinculos) dentro de topnav*/
+  background-color: #f2b705;
+  color: black;
+}
+
+.active {
+  /*style para active("home") dentro de topnav*/
+  border-right: 2px solid #c93214;
+  background-color: #f2b705;
+  color: black;
+}
+
+/*--------ARRANCA LA DOWNNAV-------*/
+
+.downnav {
+  /*style para la barra de navegacion inferior*/
+
+  background-color: #f2b705;
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+}
+
+.downnav a {
+  /*style para los a(hipervinculos) dentro de downnav*/
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "miami";
+}
+
+.downnav a:hover {
+  /*style para los hover a(hipervinculos) dentro de downnav*/
+  background-color: #f28705;
+  color: black;
+}
+
+/*--------ARRANCA LA CENTERNAV-------*/
+
+.centernav {
+  /*style para la barra de navegacion central*/
+  background-color: #f24f13;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.btn {
+  color: #212529;
+  background-color: #c77920;
+  border-color: #c76000;
+  font-family: "miami";
+}
+
+.btn:hover {
+  color: #212529;
+  background-color: #c76000;
+  border-color: #c77920;
+}
+
+.form-control {
+  color: black;
+  background-color: #c76000;
+  border-color: #d1a221;
+  font-family: "miami";
+}
+
+.imgl img {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: black;
+  padding: 0px;
+}
+
+.img-thumbnail:hover {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  border-color: #c76000;
+  padding: 0px;
+  opacity: 0.5;
+}
+
+.collapse div {
+  background-color: #f2b705;
+}
+
+.img-thumbnail123 {
+  float: left;
+  width: 200px;
+  height: 190px;
+  padding-right: 15px;
+}
+
+.descripcion {
+  padding: 50px;
+  color: #212529;
+  font-family: "miami";
+}
+
+.descripcion:hover {
+  padding: 50px;
+  color: #212529;
+  font-family: "miami";
+}
+
+.img-thumbnailsm {
+  padding-top: 10px;
+  width: 50px;
+  height: 60px;
+}
+
+body {
+  background-attachment: fixed;
+}
+
+.hr {
+  border: 1px solid #f28705;
+}
+
+.img-thumbnaillance {
+  float: left;
+  height: 100px;
+  width: 120px;
+  padding-right: 15px;
+}
+
+.form-inline input {
+  background-color: #c76000;
+  border-color: #c93214;
+  color: #212529;
+}
+
+.form-inline button {
+  background-color: #c76000;
+  border: #c93214;
+  color: #212529;
+}
+
+.form-inline button:hover {
+  background-color: #c93214;
+  color: #212529;
+}
+
+.form-inline input[type="search"] {
+  background-color: #c76000;
+  border-color: #c93214;
+}
+
+.form-inline input::placeholder {
+  background-color: #c76000;
+  border-color: #c93214;
+  color: #212529;
+  outline: none;
+}
+
+.carousel-item {
+  height: 350px;
+}
+.carousel-item img {
+  height: 350px;
+  border: 10px solid#c76000;
+}
+
+#footer {
+  background-color: #f2b705;
+}
+/*style para legend */
+#legend {
+  background: #023859;
+  border: white 1px solid;
+  font-family: "miami";
+  color: #6ddaf2;
+}
+
+/*style para fieldset */
+#fieldset {
+  background-image: url("images/fieldset.png");
+  background-size: 100%;
+  border: white 1px solid;
+  font-family: "miami";
+}

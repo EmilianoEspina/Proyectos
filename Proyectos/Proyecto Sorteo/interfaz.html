@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h1 id="n1" class="text-center este">N1</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h1 id="n2" class="text-center este">N2</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h1 id="n3" class="text-center este">N3</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <h1 id="n4" class="text-center este">N4</h1>
+            </div>
+          </div>
+        </div>
+      </div> <!-- aca cierra el row-->
+      
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-primary btn-block btn-lg"
+            id="boton"
+          >
+            SORTEAR
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#boton").click(function () {
+          //console.log("click");
+
+          $("h1.este").text("--");
+
+          $.getJSON("sorteo.php", function (datos) {
+            
+            //console.log(datos);
+
+            if (datos.status == "ok") {
+              $("#n1").text(datos.numeros[0]);
+              $("#n2").text(datos.numeros[1]);
+              $("#n3").text(datos.numeros[2]);
+              $("#n4").text(datos.numeros[3]);
+            } else {
+              alert("error!");
+            }
+
+
+            
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
